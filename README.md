@@ -1,19 +1,22 @@
-1-navbar qismi Botir
-2-footer qismi Abror
-1. nav-Botir
-2. main section-Abror
-3. Ommabop xizmatlar-Botir
+1-navbar qismi Botir - navbar.html
+2-footer qismi Abror - footer.html
 
-4. Statistika-Abror
-5. Mijozlar sharhi-Botir
-6. Texniklarimiz bilan tanishing-Botir
-7. Biz qanday yordam bera olamiz-Abror
-8. Footer
+2ta qism bo'lgandan so'ng
 
+Botir index.html ga 2ta faylni birlashtiradi
+Ana undan so'nag
 
-1. Navbar va Footerni yasab olish - index.html
-  
-2. Main main.html (Nav & Footerni copy paste)
+index.html dagi navbar va footerni o'zini hammma faylga nusxalab chiqiliad
+
+1. main section-Abror - main.html main.css
+2. Ommabop xizmatlar-Botir ommabop.html
+3. Statistika-Abror - statistics.html
+4. Mijozlar sharhi-Botir - mijozlar.html
+5. Texniklarimiz bilan tanishing-Botir - texniklarimiz.html
+5. Biz qanday yordam bera olamiz-Abror - yordam.html
+
+Hamma fayllarga nusxsalagandan keyin hamma o'zini ishini o'zini faylida yozib ketadi
+va yozib bo'lgandan keyin index.html navbarga o'sha nomli menu qator qo'shadi
 
 
 
