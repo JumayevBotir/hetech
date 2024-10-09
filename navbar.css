@@ -7,8 +7,7 @@
     font-family: 'Roboto';
 }
 body{
-    background-color: aqua;
-   height: 200vh;
+    
 }
 .containerOne{
     max-width: 100%;
@@ -213,4 +212,48 @@ gap: 5px;
     width: 93%;
     margin: 0 auto;
     
+}
+.headr{
+    background-color:rgb(0, 149, 255);
+    background-position: bottom;
+    
+}   
+.headr .container{
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    padding-top: 60px;
+    padding-bottom: 0px;
+}
+.headr-left_title{
+    font-size: 50px;
+    font-weight: 500;
+    color: #ffffff;
+    vertical-align: inherit;
+    opacity: 80%;
+    padding-bottom: 40px;
+}
+.headr-aylanma{
+    font-size: 50px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.headr-left_text{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27px;
+    color: #fff;
+    padding: 25px 0px;
+}
+.headr-right_img{
+    width: 400px;
+}
+.headr-select{
+    padding: 25px   ;
+    width: 450px;
+    font-size: 20px;
+    color: rgb(49, 109, 205);
+    font-weight: 700;
+    outline: none;
+    border-radius: 10px;
 }

@@ -1,3 +1,4 @@
+////////Search uchun qilingan ish//////////////////
 let search=document.querySelector('.navbar-right_search');
 let navbar=document.querySelector('.navbar');
 let originalNavbarContent = navbar.innerHTML;
@@ -19,3 +20,14 @@ search.addEventListener('click',(e)=>{
 imgX.addEventListener('click',()=>{
     navbar.innerHTML = originalNavbarContent;
 })
+/////////////////////////////////////Aylanma yozuv uchun qilingan ish/////////////////
+let headrAylanma=document.querySelector('.headr-aylanma');
+let aylanmaYozuv=["Kompyuter","Wi-fi tarmog'i","Prenter",'Uy Teatri'];
+let index=0;
+function yangila(){
+    headrAylanma.innerHTML=aylanmaYozuv[index];
+    index=(index+1)%aylanmaYozuv.length;
+}
+setInterval(yangila,2000);
+yangila()
+////////////////////////////////////////////
