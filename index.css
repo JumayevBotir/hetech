@@ -554,6 +554,11 @@ padding: 80px 0px;
    .nav-item{
     width: 45%;
    }
+   .main-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
 }
 @media(max-width:500px){
     .navbar-left_title{
@@ -630,5 +635,24 @@ padding: 80px 0px;
     }
     .nav-bottom_btn{
         width: 100%;
+    }
+    .main-top_title{
+        font-size: 35px;
+    }
+    .main-top_subtitle{
+        font-size: 35px;
+    }
+    .main-top_img{
+        width: 35px;
+    }
+    .main-top_text{
+        font-size: 14px;
+        text-align: center;
+    }
+    .main-bottom_title{
+        font-size: 16px;
+    }
+    .main-bottom_btn{
+        font-size: 15px;
     }
 }
