@@ -541,16 +541,18 @@ padding: 80px 0px;
     }
     .headr .container{
         gap: 0%;
+        padding-top: 30px;
+        padding-bottom: 40px;
     }
     .headr-left_title{
-        font-size: 25px;
+        font-size: 30px;
         padding-bottom: 20px;
     }
     .headr-aylanma{
-        font-size: 25px;
+        font-size: 30px;
     }
     .headr-left_text{
-        font-size: 14px;
+        font-size: 16px;
         padding-top: 10px;
     }
     .headr-select{
