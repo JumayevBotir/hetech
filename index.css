@@ -628,4 +628,7 @@ padding: 80px 0px;
     .nav-top{
         padding-bottom: 40px;
     }
+    .nav-bottom_btn{
+        width: 100%;
+    }
 }
