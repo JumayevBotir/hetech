@@ -34,29 +34,62 @@ yangila()
 ///////Modal/////////////
 
 let navModal = document.querySelector('.main-modal');
-navModal.style.display = "none";
+        let mainBtn = document.querySelector('.main-bottom_btn');
+        let modalImgs = document.querySelector('.modal-imgs');
+        let form = document.querySelector('.form_modal');
+        let telInput = document.querySelector('.modal-tel');
+        let modalIsim=document.querySelector('.modal-isim')
+        let modalFam=document.querySelector('.modal-familiya')
+        navModal.style.display = "none";
+        
+        let tg = {
+            token: "7494203155:AAG7EeoGIGtuUPk0H3dKjUKoD-kwleum3Gg",
+            chat_id: "-1002085754742"
+        };
 
-let mainBtn = document.querySelector('.main-bottom_btn');
-let modalImgs = document.querySelector('.modal-imgs');
+        mainBtn.addEventListener('click', () => {
+            navModal.style.display = "block";
+        });
 
-modalImgs.addEventListener('click', () => {
-    navModal.style.display = "none";
-});
+        modalImgs.addEventListener('click', () => {
+            navModal.style.display = "none";
+        });
 
-mainBtn.addEventListener('click', () => {
-    navModal.style.display = "block";
-});
+        telInput.addEventListener('focus', () => {
+            if (telInput.value === '') {
+                telInput.value = '+998';
+            }
+        });
 
-const form = document.querySelector('.form_modal');
-const telInput = document.querySelector('.modal-tel');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const telValue = telInput.value;
+            sendMessage(`Forma yuborildi: 
+                ${modalIsim.value} 
+                ${modalFam.value}
+                ${telValue}`);  
+                
+               
+               
+            alert('Forma yuborildi: ' + telValue);
+            navModal.style.display = "none";
+        });
 
-telInput.addEventListener('focus', () => {
-    if (telInput.value === '') {
-        telInput.value = '+998';
-    }
-});
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    alert('Forma yuborildi: ' + telInput.value);
-});
-let a=document.querySelector('body');
+        function sendMessage(text) {
+            const url = `https://api.telegram.org/bot${tg.token}/sendMessage?chat_id=${tg.chat_id}&text=${text}`;
+            fetch(url)
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    } else {
+                        console.error('Xato:', response.status, response.statusText);
+                        throw new Error('Tarmoq javobi yaxshi emas');
+                    }
+                })
+                .then(data => {
+                    console.log('Xabar yuborildi:', data);
+                })
+                .catch(error => {
+                    console.error('Fetch jarayonida muammo yuz berdi:', error);
+                });
+        }
