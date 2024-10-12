@@ -59,3 +59,4 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     alert('Forma yuborildi: ' + telInput.value);
 });
+let a=document.querySelector('body');
