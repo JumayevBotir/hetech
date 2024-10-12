@@ -31,3 +31,16 @@ function yangila(){
 setInterval(yangila,2000);
 yangila()
 ////////////////////////////////////////////
+///////Modal/////////////
+
+let navModal=document.querySelector('.nav-modal');
+navModal.style.display = "none";
+let navBtn=document.querySelector('.nav-bottom_btn');
+let modalImgs=document.querySelector('.modal-imgs')
+modalImgs.addEventListener('click',()=>{
+    navModal.style.display = "none";
+})
+navBtn.addEventListener('click',()=>{
+    navModal.style.display = "block";
+})
+
