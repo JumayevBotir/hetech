@@ -503,7 +503,7 @@ padding: 80px 0px;
     
     transform: translateY(-10px);
 }
-.nav-modal{
+.main-modal{
     position: absolute;
     top: 40%;
     background-color: white;
@@ -512,6 +512,7 @@ padding: 80px 0px;
     padding-right: 15px;
     border-radius: 10px;
     width: 70%;
+   left: 15%;
     
 }
 .form_modal {
@@ -521,7 +522,7 @@ padding: 80px 0px;
     gap: 15px;
    
 }
-.nav .container{
+.main {
     position: relative;
 }
 .modal-isim {

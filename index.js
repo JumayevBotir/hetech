@@ -33,14 +33,29 @@ yangila()
 ////////////////////////////////////////////
 ///////Modal/////////////
 
-let navModal=document.querySelector('.nav-modal');
+let navModal = document.querySelector('.main-modal');
 navModal.style.display = "none";
-let navBtn=document.querySelector('.nav-bottom_btn');
-let modalImgs=document.querySelector('.modal-imgs')
-modalImgs.addEventListener('click',()=>{
-    navModal.style.display = "none";
-})
-navBtn.addEventListener('click',()=>{
-    navModal.style.display = "block";
-})
 
+let mainBtn = document.querySelector('.main-bottom_btn');
+let modalImgs = document.querySelector('.modal-imgs');
+
+modalImgs.addEventListener('click', () => {
+    navModal.style.display = "none";
+});
+
+mainBtn.addEventListener('click', () => {
+    navModal.style.display = "block";
+});
+
+const form = document.querySelector('.form_modal');
+const telInput = document.querySelector('.modal-tel');
+
+telInput.addEventListener('focus', () => {
+    if (telInput.value === '') {
+        telInput.value = '+998';
+    }
+});
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    alert('Forma yuborildi: ' + telInput.value);
+});
