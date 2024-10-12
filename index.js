@@ -64,12 +64,7 @@ let navModal = document.querySelector('.main-modal');
         form.addEventListener('submit', (event) => {
             event.preventDefault();
             const telValue = telInput.value;
-            sendMessage(`Forma yuborildi: 
-                ${modalIsim.value} 
-                ${modalFam.value}
-                ${telValue}`);  
-                
-               
+            sendMessage(`Forma yuborildi:\n Ism: ${modalIsim.value}\n  Familiya: ${modalFam.value}\n  Telefon: ${telValue}`);
                
             alert('Forma yuborildi: ' + telValue);
             navModal.style.display = "none";
